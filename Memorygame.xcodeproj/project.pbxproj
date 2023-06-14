@@ -11,6 +11,8 @@
 		5BA2A1142A370F9A00B0AA11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA2A1132A370F9A00B0AA11 /* ContentView.swift */; };
 		5BA2A1162A370F9C00B0AA11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA2A1152A370F9C00B0AA11 /* Assets.xcassets */; };
 		5BA2A1192A370F9C00B0AA11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA2A1182A370F9C00B0AA11 /* Preview Assets.xcassets */; };
+		5BA2A1222A37202900B0AA11 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA2A1212A37202900B0AA11 /* MemoryGame.swift */; };
+		5BA2A1262A37314400B0AA11 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA2A1252A37314400B0AA11 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		5BA2A1132A370F9A00B0AA11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5BA2A1152A370F9C00B0AA11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BA2A1182A370F9C00B0AA11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BA2A1212A37202900B0AA11 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		5BA2A1252A37314400B0AA11 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				5BA2A1132A370F9A00B0AA11 /* ContentView.swift */,
 				5BA2A1152A370F9C00B0AA11 /* Assets.xcassets */,
 				5BA2A1172A370F9C00B0AA11 /* Preview Content */,
+				5BA2A1212A37202900B0AA11 /* MemoryGame.swift */,
+				5BA2A1252A37314400B0AA11 /* CardView.swift */,
 			);
 			path = Memorygame;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BA2A1142A370F9A00B0AA11 /* ContentView.swift in Sources */,
+				5BA2A1222A37202900B0AA11 /* MemoryGame.swift in Sources */,
+				5BA2A1262A37314400B0AA11 /* CardView.swift in Sources */,
 				5BA2A1122A370F9A00B0AA11 /* MemorygameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

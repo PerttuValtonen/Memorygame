@@ -8,14 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    private var fourColumnGrid = [GridItem(.flexible()),
+                                  GridItem(.flexible()),
+                                  GridItem(.flexible()),
+                                  GridItem(.flexible())]
+    
+    @State var cards = createCardList().shuffled()
+    @State var MatchedCards = [Card]()
+    @State var UserChoices = [Card]()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        GeometryReader { geo in
+            ZStack {
+                Image("background-cloth")
+                    .resizable()
+                    .ignoresSafeArea()
+                VStack {
+                    Text("Memory Game")
+                        .font(.largeTitle)
+                        .bold()
+                        .foregroundColor(.white)
+                    
+                    LazyVGrid(columns: fourColumnGrid) {
+                        ForEach(cards) { card in
+                            CardView(card: card,
+                                     MatchedCards: $MatchedCards,
+                                     UserChoices: $UserChoices)
+                        }
+                    }
+                    .padding()
+                    
+                    Text("Match cards to win")
+                        .font(.title)
+                        .bold()
+                        .foregroundColor(.white)
+                }
+            }
         }
-        .padding()
     }
 }
 
